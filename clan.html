@@ -1,0 +1,10 @@
+<script>
+  function getUrlParam(parameter, defaultValue) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(parameter) || defaultValue;
+  }
+
+  var id = getUrlParam('id', 'na')
+  
+  window.location.href="https://armageddonbot.gq/clan?id="+id
+</script>
